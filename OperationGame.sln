@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameForm", "GameForm\GameForm.csproj", "{764931C8-B73A-4C38-8656-1BE5CA82AA4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{764931C8-B73A-4C38-8656-1BE5CA82AA4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{764931C8-B73A-4C38-8656-1BE5CA82AA4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{764931C8-B73A-4C38-8656-1BE5CA82AA4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{764931C8-B73A-4C38-8656-1BE5CA82AA4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A104DCD1-27E5-4AC2-B934-A9165BA061DA}
+	EndGlobalSection
+EndGlobal
