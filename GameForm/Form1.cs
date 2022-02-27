@@ -16,5 +16,18 @@ namespace GameForm
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            if (1 == 1)
+            {
+                gameModeDefault();
+            }
+        }
+
+        private void gameModeDefault()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
