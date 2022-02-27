@@ -130,7 +130,7 @@ namespace Game.Forms
         {
             List<int> numbers = new List<int>();
             List<int> numbersBackup = new List<int>();
-            int total = 0, a, aBackup, b, bBackup, temp = 0, op = 0;
+            int total, a, aBackup, b, bBackup, temp, op;
             decimal result = 0;
             string deneme1 = null, deneme2 = null;
             do
@@ -192,8 +192,8 @@ namespace Game.Forms
                 deneme2 += "\n";
             } while (total < 100 || total >= 1000);
 
-            MessageBox.Show(deneme1);
-            MessageBox.Show(deneme2);
+            //MessageBox.Show(deneme1);
+            //MessageBox.Show(deneme2);
             for (int i = 0; i < 6; i++)
             {
                 numberButtons[i].Text = numbersBackup[i].ToString();
@@ -240,6 +240,7 @@ namespace Game.Forms
                         operationButtons[numOfOperation, i].Enabled = false;
                     }
                     lblTotal.Text = operationButtons[numOfOperation, 4].Text;
+
                     if (numOfOperation < 4)
                     {
                         for (int i = 0; i < 6; i++)
@@ -252,9 +253,12 @@ namespace Game.Forms
                         }
                         numberButtons[temp].Text = operationButtons[numOfOperation, 4].Text;
                         numberButtons[temp].Enabled = true;
-                        OperationButtonAddForm();
                     }
                     numOfOperation++;
+                    if (numOfOperation < 5)
+                    {
+                        OperationButtonAddForm();
+                    }
                 }
                 else
                 {
@@ -393,9 +397,9 @@ namespace Game.Forms
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (numOfOperation < 4 && _gameMode == 1)
+            if (numOfOperation < 5 && _gameMode == 1)
             {
-                MessageBox.Show("işlem eksik");
+                MessageBox.Show("Bu oyun modunda bütün sayıları kullanmak zorundasınızdır.");
             }
             else
             {
